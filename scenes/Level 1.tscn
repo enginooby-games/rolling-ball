@@ -27,6 +27,7 @@ material/0 = null
 
 [node name="Camera" type="Camera" parent="."]
 transform = Transform( 1, 0, 0, 0, 0.999809, -0.0195464, 0, 0.0195464, 0.999809, 0, 4.36288, 11.4231 )
+far = 90.0
 
 [node name="Floor" type="StaticBody" parent="."]
 

@@ -20,4 +20,10 @@ config/icon="res://icon.png"
 
 [rendering]
 
+quality/driver/fallback_to_gles2=true
+threads/thread_model=2
+batching/parameters/batch_buffer_size=21504
+limits/buffers/canvas_polygon_buffer_size_kb=256
+limits/buffers/canvas_polygon_index_buffer_size_kb=256
+limits/rendering/max_renderable_elements=85536
 environment/default_environment="res://default_env.tres"
