@@ -41,6 +41,11 @@ material/0 = SubResource( 5 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5906, 0 )
 script = ExtResource( 2 )
 
-[node name="Camera" type="Camera" parent="."]
-transform = Transform( 1, 0, 0, 0, 0.999809, -0.0195464, 0, 0.0195464, 0.999809, 0, 4.36288, 11.4231 )
-far = 90.0
+[node name="Camera Target" type="Spatial" parent="Player"]
+transform = Transform( 1, 0, 0, 0, 0.733528, 0.679659, 0, -0.679659, 0.733528, 0, 9.71554, 13.8535 )
+
+[node name="InterpolatedCamera" type="InterpolatedCamera" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.571545, 0.820571, 0, -0.820571, 0.571545, 1.8831, 13.3047, 39.0029 )
+target = NodePath("../Player/Camera Target")
+speed = 3.0
+enabled = true
