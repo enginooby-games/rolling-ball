@@ -1,7 +1,7 @@
 extends KinematicBody
 
 var vel = Vector3(0, 0, 0)
-const SPEED = 5
+const SPEED = 8
 const ROTATE_SPEED = 6
 
 
@@ -19,7 +19,7 @@ func _physics_process(delta):
 		vel.x = SPEED
 		$MeshInstance.rotate_z(deg2rad(ROTATE_SPEED))
 	else:
-		vel.x = lerp(vel.x, 0, 0.1)
+		vel.x = lerp(vel.x, 0, 0.2)
 
 	if Input.is_action_pressed("ui_up") and Input.is_action_pressed("ui_down"):
 		vel.z = 0
@@ -30,6 +30,6 @@ func _physics_process(delta):
 		vel.z = SPEED
 		$MeshInstance.rotate_x(deg2rad(ROTATE_SPEED))
 	else:
-		vel.z = lerp(vel.z, 0, 0.1)
+		vel.z = lerp(vel.z, 0, 0.2)
 
 	move_and_slide(vel)
