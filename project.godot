@@ -57,4 +57,4 @@ ui_down={
 
 quality/driver/driver_name="GLES2"
 quality/driver/fallback_to_gles2=true
-environment/default_environment="res://default_env.tres"
+environment/default_environment="res://enviroments/env1.tres"
